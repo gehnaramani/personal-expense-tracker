@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spendly | Personal Expense Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><div class="logo">₹</div><div><h1>Spendly</h1><p>Personal Expense Tracker</p></div></div>
+  <button id="themeBtn">☾</button>
+</header>
+<main>
+  <section class="hero"><div><small>FINANCE DASHBOARD</small><h2>Track your money smarter.</h2></div><span class="month">October 2026</span></section>
+  <section class="stats">
+    <div class="stat balance"><span>Total Balance</span><b id="balance">₹12,450</b><small>Available funds</small></div>
+    <div class="stat income"><span>Income</span><b id="income">₹20,000</b><small>This month</small></div>
+    <div class="stat expense"><span>Expenses</span><b id="expense">₹7,550</b><small>This month</small></div>
+  </section>
+  <section class="grid">
+    <div class="card">
+      <div class="cardhead"><h3>Add Transaction</h3><span>＋</span></div>
+      <form id="form">
+        <input id="title" placeholder="Transaction title" required>
+        <div class="row"><input id="amount" type="number" min="1" placeholder="Amount ₹" required>
+        <select id="type"><option value="expense">Expense</option><option value="income">Income</option></select></div>
+        <select id="category"><option>Food</option><option>Travel</option><option>Shopping</option><option>Education</option><option>Salary</option><option>Other</option></select>
+        <button class="primary">Add Transaction</button>
+      </form>
+    </div>
+    <div class="card">
+      <div class="cardhead"><h3>Recent Transactions</h3><span>↗</span></div>
+      <input id="search" class="search" placeholder="Search transactions...">
+      <div id="list"></div>
+    </div>
+  </section>
+</main>
+<footer>HTML • CSS • JavaScript • Local Storage</footer>
+<script src="script.js"></script>
+</body>
+</html>
